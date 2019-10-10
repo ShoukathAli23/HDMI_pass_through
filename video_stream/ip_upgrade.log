@@ -1,0 +1,131 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Oct 10 13:04:39 2019
+| Host         : DESKTOP-LDFEUQN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_pixel_stream_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_pixel_stream_0_0 (xilinx.com:user:pixel_stream:1.0) from (Rev. 5) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_pixel_stream_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'm00_axis_tdata' width 24 differs from original width 32
+
+-Upgraded port 'm00_axis_tstrb' width 3 differs from original width 4
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Oct 10 12:59:45 2019
+| Host         : DESKTOP-LDFEUQN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_pixel_stream_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_pixel_stream_0_0 (xilinx.com:user:pixel_stream:1.0 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Oct 10 12:59:29 2019
+| Host         : DESKTOP-LDFEUQN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_pixel_stream_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_pixel_stream_0_0 (xilinx.com:user:pixel_stream:1.0) from (Rev. 4) to (Rev. 5)
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_pixel_stream_0_0'.
+
+
+-Upgrade has removed interface 'M_TUSER'
+
+-Upgrade has removed interface 'S_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Oct 10 12:56:52 2019
+| Host         : DESKTOP-LDFEUQN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_pixel_stream_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_pixel_stream_0_0 (xilinx.com:user:pixel_stream:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_pixel_stream_0_0'.
+
+
+-Upgrade has added interface 'M_TUSER' (xilinx.com:interface:axis:1.0)
+
+-Upgrade has added interface 'S_TUSER' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_pixel_stream_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'm00_axis_tdata' width 32 differs from original width 24
+
+-Upgraded port 'm00_axis_tstrb' width 4 differs from original width 3
+
+-Upgrade has added port 'm00_axis_tuser'
+
+-Upgrade has added port 's00_axis_tuser'
+
+

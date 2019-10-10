@@ -1,0 +1,1241 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Oct 10 13:10:26 2019
+# Process ID: 14476
+# Current directory: E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/system_wrapper.vds
+# Journal file: E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ciip/ReCoTroy-ciip/Code/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Work_Space/vivado_workspace/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2018.3/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 317.938 ; gain = 37.977
+Command: synth_design -top system_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9872 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 443.000 ; gain = 112.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [E:/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [E:/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'system' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:6171]
+INFO: [Synth 8-6157] synthesizing module 'system_concat_interrupts_0' [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_concat_interrupts_0/synth/system_concat_interrupts_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 6 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 3 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 6 - type: integer 
+	Parameter NUM_PORTS bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (2#1) [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'system_concat_interrupts_0' (3#1) [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_concat_interrupts_0/synth/system_concat_interrupts_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'system_proc_sys_reset_fclk1_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_proc_sys_reset_fclk1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_proc_sys_reset_fclk1_0' (4#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_proc_sys_reset_fclk1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_fclk1' of module 'system_proc_sys_reset_fclk1_0' requires 10 connections, but only 7 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:6451]
+INFO: [Synth 8-6157] synthesizing module 'system_ps7_0_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_ps7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_ps7_0_0' (5#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_ps7_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ps7_0' of module 'system_ps7_0_0' requires 122 connections, but only 114 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:6459]
+INFO: [Synth 8-6157] synthesizing module 'system_ps7_0_axi_periph_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:8950]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1H7AUOX' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:2647]
+INFO: [Synth 8-6157] synthesizing module 'system_m00_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m00_regslice_0' (6#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m00_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm00_regslice' of module 'system_m00_regslice_0' requires 40 connections, but only 38 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:2806]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1H7AUOX' (7#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:2647]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_4Y7TYO' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:2847]
+INFO: [Synth 8-6157] synthesizing module 'system_m01_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m01_regslice_0' (8#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_4Y7TYO' (9#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:2847]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_11SE3QO' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5324]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_1' (10#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_s00_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_s00_regslice_0' (11#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_11SE3QO' (12#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5324]
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_2' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_2' (13#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_ps7_0_axi_periph_0' (14#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:8950]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_ps7_0_fclk0_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_rst_ps7_0_fclk0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_ps7_0_fclk0_0' (15#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_rst_ps7_0_fclk0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_fclk0' of module 'system_rst_ps7_0_fclk0_0' requires 10 connections, but only 7 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:6657]
+INFO: [Synth 8-6157] synthesizing module 'system_system_interrupts_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_system_interrupts_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_system_interrupts_0' (16#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_system_interrupts_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'video_imp_1EQPUBJ' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:9527]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_0_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:6772]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_17F0U9H' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:1926]
+INFO: [Synth 8-6157] synthesizing module 'system_m00_regslice_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m00_regslice_1' (17#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m00_regslice_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'm00_regslice' of module 'system_m00_regslice_1' requires 40 connections, but only 37 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:2081]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_17F0U9H' (18#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:1926]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_DW50H0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3057]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_cc_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_cc_0' (19#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_m01_regslice_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m01_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m01_regslice_1' (20#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m01_regslice_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'm01_regslice' of module 'system_m01_regslice_1' requires 40 connections, but only 38 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3282]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_DW50H0' (21#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3057]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7Q885Y' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3323]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_cc_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_cc_1' (22#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_m02_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m02_regslice_0' (23#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m02_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm02_regslice' of module 'system_m02_regslice_0' requires 40 connections, but only 38 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3548]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7Q885Y' (24#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3323]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1EEWPTZ' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3589]
+INFO: [Synth 8-6157] synthesizing module 'system_m03_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m03_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m03_regslice_0' (25#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m03_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1EEWPTZ' (26#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3589]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_K25AYA' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'system_m04_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m04_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m04_regslice_0' (27#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m04_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm04_regslice' of module 'system_m04_regslice_0' requires 40 connections, but only 38 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3958]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_K25AYA' (28#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1RUS6CJ' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3999]
+INFO: [Synth 8-6157] synthesizing module 'system_m05_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m05_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m05_regslice_0' (29#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m05_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm05_regslice' of module 'system_m05_regslice_0' requires 40 connections, but only 38 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4158]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1RUS6CJ' (30#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:3999]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1LOVFTD' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4199]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_cc_2' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_cc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_cc_2' (31#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_cc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_m06_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m06_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m06_regslice_0' (32#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m06_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm06_regslice' of module 'system_m06_regslice_0' requires 40 connections, but only 38 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4424]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1LOVFTD' (33#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4199]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_R217WG' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4465]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_cc_3' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_cc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_cc_3' (34#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_cc_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_m07_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m07_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m07_regslice_0' (35#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m07_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm07_regslice' of module 'system_m07_regslice_0' requires 40 connections, but only 38 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4690]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_R217WG' (36#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4465]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1UFEID6' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4731]
+INFO: [Synth 8-6157] synthesizing module 'system_m08_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m08_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m08_regslice_0' (37#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m08_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm08_regslice' of module 'system_m08_regslice_0' requires 40 connections, but only 38 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4890]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1UFEID6' (38#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4731]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_I1BV1N' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4931]
+INFO: [Synth 8-6157] synthesizing module 'system_m09_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m09_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m09_regslice_0' (39#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m09_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm09_regslice' of module 'system_m09_regslice_0' requires 40 connections, but only 38 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5090]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_I1BV1N' (40#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:4931]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1BPMI78' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5746]
+INFO: [Synth 8-6157] synthesizing module 'system_s00_regslice_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_s00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_s00_regslice_1' (41#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_s00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1BPMI78' (42#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5746]
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_0' (43#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_0_1' (44#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:6772]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_mem_intercon_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:8337]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1D9ZDWS' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:2121]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_0' (45#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_m00_regslice_2' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m00_regslice_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_m00_regslice_2' (46#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_m00_regslice_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1D9ZDWS' (47#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:2121]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_117EIM5' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5131]
+INFO: [Synth 8-6157] synthesizing module 'system_s00_regslice_2' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_s00_regslice_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_s00_regslice_2' (48#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_s00_regslice_2_stub.v:6]
+WARNING: [Synth 8-350] instance 's00_regslice' of module 'system_s00_regslice_2' requires 40 connections, but only 39 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5282]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_117EIM5' (49#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5131]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_B8JDWS' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5956]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_us_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_us_0' (50#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_auto_us_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us' of module 'system_auto_us_0' requires 34 connections, but only 33 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:6099]
+INFO: [Synth 8-6157] synthesizing module 'system_s01_regslice_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_s01_regslice_0' (51#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_B8JDWS' (52#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:5956]
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_1' (53#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_xbar_1_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_awready' does not match port width (2) of module 'system_xbar_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:8932]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_bresp' does not match port width (4) of module 'system_xbar_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:8936]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_bvalid' does not match port width (2) of module 'system_xbar_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:8937]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_wready' does not match port width (2) of module 'system_xbar_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:8945]
+WARNING: [Synth 8-350] instance 'xbar' of module 'system_xbar_1' requires 78 connections, but only 76 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:8871]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_mem_intercon_1' (54#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:8337]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axi_vdma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_0' (55#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axi_vdma_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_vdma' of module 'system_axi_vdma_0' requires 67 connections, but only 64 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:10369]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_in_imp_NQ29ND' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:789]
+INFO: [Synth 8-6157] synthesizing module 'system_axis_register_slice_0_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axis_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axis_register_slice_0_0' (56#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axis_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_color_convert_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_color_convert_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_color_convert_0' (57#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_color_convert_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'frontend_imp_1IDM840' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_gpio_hdmiin_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axi_gpio_hdmiin_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_gpio_hdmiin_0' (58#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axi_gpio_hdmiin_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_color_swap_0_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_color_swap_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_color_swap_0_0' (59#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_color_swap_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_dvi2rgb_1_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_dvi2rgb_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_dvi2rgb_1_0' (60#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_dvi2rgb_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_v_vid_in_axi4s_0_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_v_vid_in_axi4s_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_vid_in_axi4s_0_0' (61#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_v_vid_in_axi4s_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_vid_in_axi4s_0' of module 'system_v_vid_in_axi4s_0_0' requires 28 connections, but only 22 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:318]
+INFO: [Synth 8-6157] synthesizing module 'system_vtc_in_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_vtc_in_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_vtc_in_0' (62#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_vtc_in_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'vtc_in' of module 'system_vtc_in_0' requires 29 connections, but only 28 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:341]
+INFO: [Synth 8-6155] done synthesizing module 'frontend_imp_1IDM840' (63#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6157] synthesizing module 'system_pixel_pack_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_pixel_pack_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_pixel_pack_0' (64#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_pixel_pack_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_pixel_stream_0_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_pixel_stream_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_pixel_stream_0_0' (65#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_pixel_stream_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'pixel_stream_0' of module 'system_pixel_stream_0_0' requires 16 connections, but only 15 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:1330]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_in_imp_NQ29ND' (66#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:789]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_out_imp_1JATQKJ' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:1348]
+INFO: [Synth 8-6157] synthesizing module 'system_axis_register_slice_0_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axis_register_slice_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axis_register_slice_0_1' (67#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axis_register_slice_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_color_convert_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_color_convert_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_color_convert_1' (68#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_color_convert_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'frontend_imp_58W1JN' [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:372]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_dynclk_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axi_dynclk_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_dynclk_0' (69#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_axi_dynclk_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_color_swap_0_1' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_color_swap_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_color_swap_0_1' (70#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_color_swap_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_hdmi_out_hpd_video_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_hdmi_out_hpd_video_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_hdmi_out_hpd_video_0' (71#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_hdmi_out_hpd_video_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_rgb2dvi_0_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rgb2dvi_0_0' (72#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_v_axi4s_vid_out_0_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_axi4s_vid_out_0_0' (73#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_v_axi4s_vid_out_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_axi4s_vid_out_0' of module 'system_v_axi4s_vid_out_0_0' requires 31 connections, but only 22 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:732]
+INFO: [Synth 8-6157] synthesizing module 'system_vtc_out_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_vtc_out_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_vtc_out_0' (74#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_vtc_out_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'vtc_out' of module 'system_vtc_out_0' requires 32 connections, but only 31 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:755]
+INFO: [Synth 8-6155] done synthesizing module 'frontend_imp_58W1JN' (75#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:372]
+INFO: [Synth 8-6157] synthesizing module 'system_pixel_unpack_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_pixel_unpack_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_pixel_unpack_0' (76#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_pixel_unpack_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_out_imp_1JATQKJ' (77#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:1348]
+INFO: [Synth 8-6157] synthesizing module 'system_proc_sys_reset_pixelclk_0' [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_proc_sys_reset_pixelclk_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_proc_sys_reset_pixelclk_0' (78#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/.Xil/Vivado-14476-DESKTOP-LDFEUQN/realtime/system_proc_sys_reset_pixelclk_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_pixelclk' of module 'system_proc_sys_reset_pixelclk_0' requires 10 connections, but only 7 given [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:10634]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconcat_0_0' [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat__parameterized0' [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 6 - type: integer 
+	Parameter NUM_PORTS bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat__parameterized0' (78#1) [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconcat_0_0' (79#1) [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'video_imp_1EQPUBJ' (80#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:9527]
+INFO: [Synth 8-6155] done synthesizing module 'system' (81#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/synth/system.v:6171]
+INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (82#1) [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat__parameterized0 has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s01_couplers_imp_B8JDWS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_B8JDWS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_117EIM5 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_117EIM5 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_bid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_bid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_bid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_bid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_bid[1]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_rid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_rid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_rid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_rid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1D9ZDWS has unconnected port M_AXI_rid[1]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1BPMI78 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1BPMI78 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[12]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[11]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[10]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_araddr[9]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[16]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[15]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[14]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[13]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[12]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[11]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[10]
+WARNING: [Synth 8-3331] design m09_couplers_imp_I1BV1N has unconnected port S_AXI_awaddr[9]
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m08_couplers_imp_1UFEID6 has unconnected port S_AXI_araddr[24]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 505.004 ; gain = 174.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 505.004 ; gain = 174.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 505.004 ; gain = 174.238
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_proc_sys_reset_fclk1_0/system_proc_sys_reset_fclk1_0/system_proc_sys_reset_fclk1_0_in_context.xdc] for cell 'system_i/proc_sys_reset_fclk1'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_proc_sys_reset_fclk1_0/system_proc_sys_reset_fclk1_0/system_proc_sys_reset_fclk1_0_in_context.xdc] for cell 'system_i/proc_sys_reset_fclk1'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc] for cell 'system_i/ps7_0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc] for cell 'system_i/ps7_0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'system_i/rst_ps7_0_fclk0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0/system_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'system_i/rst_ps7_0_fclk0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_system_interrupts_0/system_system_interrupts_0/system_system_interrupts_0_in_context.xdc] for cell 'system_i/system_interrupts'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_system_interrupts_0/system_system_interrupts_0/system_system_interrupts_0_in_context.xdc] for cell 'system_i/system_interrupts'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0/system_axi_vdma_0_in_context.xdc] for cell 'system_i/video/axi_vdma'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axi_vdma_0/system_axi_vdma_0/system_axi_vdma_0_in_context.xdc] for cell 'system_i/video/axi_vdma'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_proc_sys_reset_pixelclk_0/system_proc_sys_reset_pixelclk_0/system_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'system_i/video/proc_sys_reset_pixelclk'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_proc_sys_reset_pixelclk_0/system_proc_sys_reset_pixelclk_0/system_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'system_i/video/proc_sys_reset_pixelclk'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axis_register_slice_0_1/system_axis_register_slice_0_1/system_axis_register_slice_0_1_in_context.xdc] for cell 'system_i/video/hdmi_out/axis_register_slice_0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axis_register_slice_0_1/system_axis_register_slice_0_1/system_axis_register_slice_0_1_in_context.xdc] for cell 'system_i/video/hdmi_out/axis_register_slice_0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_color_convert_1/system_color_convert_1/system_color_convert_1_in_context.xdc] for cell 'system_i/video/hdmi_out/color_convert'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_color_convert_1/system_color_convert_1/system_color_convert_1_in_context.xdc] for cell 'system_i/video/hdmi_out/color_convert'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_pixel_unpack_0/system_pixel_unpack_0/system_pixel_unpack_0_in_context.xdc] for cell 'system_i/video/hdmi_out/pixel_unpack'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_pixel_unpack_0/system_pixel_unpack_0/system_pixel_unpack_0_in_context.xdc] for cell 'system_i/video/hdmi_out/pixel_unpack'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axi_dynclk_0/system_axi_dynclk_0/system_axi_dynclk_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/axi_dynclk'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axi_dynclk_0/system_axi_dynclk_0/system_axi_dynclk_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/axi_dynclk'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_color_swap_0_1/system_color_swap_0_1/system_color_swap_0_1_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/color_swap_0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_color_swap_0_1/system_color_swap_0_1/system_color_swap_0_1_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/color_swap_0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/hdmi_out_hpd_video'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0/system_hdmi_out_hpd_video_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/hdmi_out_hpd_video'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/rgb2dvi_0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/rgb2dvi_0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/v_axi4s_vid_out_0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/v_axi4s_vid_out_0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_vtc_out_0/system_vtc_out_0/system_vtc_out_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/vtc_out'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_vtc_out_0/system_vtc_out_0/system_vtc_out_0_in_context.xdc] for cell 'system_i/video/hdmi_out/frontend/vtc_out'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axis_register_slice_0_0/system_axis_register_slice_0_0/system_axis_register_slice_0_1_in_context.xdc] for cell 'system_i/video/hdmi_in/axis_register_slice_0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axis_register_slice_0_0/system_axis_register_slice_0_0/system_axis_register_slice_0_1_in_context.xdc] for cell 'system_i/video/hdmi_in/axis_register_slice_0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_color_convert_0/system_color_convert_0/system_color_convert_1_in_context.xdc] for cell 'system_i/video/hdmi_in/color_convert'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_color_convert_0/system_color_convert_0/system_color_convert_1_in_context.xdc] for cell 'system_i/video/hdmi_in/color_convert'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_pixel_pack_0/system_pixel_pack_0/system_pixel_pack_0_in_context.xdc] for cell 'system_i/video/hdmi_in/pixel_pack'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_pixel_pack_0/system_pixel_pack_0/system_pixel_pack_0_in_context.xdc] for cell 'system_i/video/hdmi_in/pixel_pack'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axi_gpio_hdmiin_0/system_axi_gpio_hdmiin_0/system_axi_gpio_hdmiin_0_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/axi_gpio_hdmiin'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_axi_gpio_hdmiin_0/system_axi_gpio_hdmiin_0/system_axi_gpio_hdmiin_0_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/axi_gpio_hdmiin'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_color_swap_0_0/system_color_swap_0_0/system_color_swap_0_0_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/color_swap_0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_color_swap_0_0/system_color_swap_0_0/system_color_swap_0_0_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/color_swap_0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/v_vid_in_axi4s_0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/v_vid_in_axi4s_0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_vtc_in_0/system_vtc_in_0/system_vtc_in_0_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/vtc_in'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_vtc_in_0/system_vtc_in_0/system_vtc_in_0_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/vtc_in'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/xbar'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/xbar'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1/system_xbar_1_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/xbar'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1/system_xbar_1_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/xbar'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_xbar_2/system_xbar_2/system_xbar_2_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_xbar_2/system_xbar_2/system_xbar_2_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/xbar'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/dvi2rgb_1'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc] for cell 'system_i/video/hdmi_in/frontend/dvi2rgb_1'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_pixel_stream_0_0/system_pixel_stream_0_0/system_pixel_stream_0_0_in_context.xdc] for cell 'system_i/video/hdmi_in/pixel_stream_0'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_pixel_stream_0_0/system_pixel_stream_0_0/system_pixel_stream_0_0_in_context.xdc] for cell 'system_i/video/hdmi_in/pixel_stream_0'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_s00_regslice_1/system_s00_regslice_1/system_s00_regslice_1_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/s00_couplers/s00_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_s00_regslice_1/system_s00_regslice_1/system_s00_regslice_1_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/s00_couplers/s00_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m00_regslice_1/system_m00_regslice_1/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m00_couplers/m00_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m00_regslice_1/system_m00_regslice_1/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m00_couplers/m00_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m01_regslice_1/system_m01_regslice_1/system_m01_regslice_1_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m01_couplers/m01_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m01_regslice_1/system_m01_regslice_1/system_m01_regslice_1_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m01_couplers/m01_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0/system_auto_cc_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m01_couplers/auto_cc'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0/system_auto_cc_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m01_couplers/auto_cc'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m02_regslice_0/system_m02_regslice_0/system_m06_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m02_couplers/m02_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m02_regslice_0/system_m02_regslice_0/system_m06_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m02_couplers/m02_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1/system_auto_cc_2_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m02_couplers/auto_cc'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1/system_auto_cc_2_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m02_couplers/auto_cc'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m03_regslice_0/system_m03_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m03_couplers/m03_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m03_regslice_0/system_m03_regslice_0/system_m03_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m03_couplers/m03_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m04_regslice_0/system_m04_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m04_couplers/m04_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m04_regslice_0/system_m04_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m04_couplers/m04_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m05_regslice_0/system_m05_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m05_couplers/m05_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m05_regslice_0/system_m05_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m05_couplers/m05_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m06_regslice_0/system_m06_regslice_0/system_m06_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m06_couplers/m06_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m06_regslice_0/system_m06_regslice_0/system_m06_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m06_couplers/m06_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2/system_auto_cc_2_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m06_couplers/auto_cc'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2/system_auto_cc_2_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m06_couplers/auto_cc'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m07_regslice_0/system_m07_regslice_0/system_m01_regslice_1_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m07_couplers/m07_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m07_regslice_0/system_m07_regslice_0/system_m01_regslice_1_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m07_couplers/m07_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_cc_3/system_auto_cc_3/system_auto_cc_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m07_couplers/auto_cc'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_cc_3/system_auto_cc_3/system_auto_cc_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m07_couplers/auto_cc'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m08_regslice_0/system_m08_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m08_couplers/m08_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m08_regslice_0/system_m08_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m08_couplers/m08_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m09_regslice_0/system_m09_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m09_couplers/m09_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m09_regslice_0/system_m09_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/video/axi_interconnect_0/m09_couplers/m09_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_s00_regslice_2/system_s00_regslice_2/system_s00_regslice_2_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/s00_couplers/s00_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_s00_regslice_2/system_s00_regslice_2/system_s00_regslice_2_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/s00_couplers/s00_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_s01_regslice_0/system_s01_regslice_0/system_s01_regslice_0_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/s01_couplers/s01_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_s01_regslice_0/system_s01_regslice_0/system_s01_regslice_0_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/s01_couplers/s01_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0/system_auto_us_0_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/s01_couplers/auto_us'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0/system_auto_us_0_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/s01_couplers/auto_us'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m00_regslice_2/system_m00_regslice_2/system_m00_regslice_2_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/m00_couplers/m00_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m00_regslice_2/system_m00_regslice_2/system_m00_regslice_2_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/m00_couplers/m00_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/m00_couplers/auto_pc'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'system_i/video/axi_mem_intercon/m00_couplers/auto_pc'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0/system_s00_regslice_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/s00_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0/system_s00_regslice_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/s00_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_1_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_1_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m00_regslice_0/system_m00_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m00_couplers/m00_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m00_regslice_0/system_m00_regslice_0/system_m05_regslice_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m00_couplers/m00_regslice'
+Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m01_regslice_0/system_m01_regslice_0/system_s00_regslice_1_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m01_couplers/m01_regslice'
+Finished Parsing XDC File [e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_m01_regslice_0/system_m01_regslice_0/system_s00_regslice_1_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/m01_couplers/m01_regslice'
+Parsing XDC File [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led_2'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'led'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:15]
+WARNING: [Vivado 12-508] No pins matched 'system_i/video/axi_dynclk/PXL_CLK_O'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'ciip_enable_out'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'ciip_posn_out[0]'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'ciip_posn_out[1]'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'ciip_posn_out[2]'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'ciip_posn_out[3]'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'ciip_posn_out[4]'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'ciip_posn_out[5]'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'ciip_posn_out[6]'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'ciip_posn_out[7]'. [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc:72]
+Finished Parsing XDC File [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/system_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/constrs_1/imports/constraints/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 867.082 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.082 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 867.082 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/video/axi_vdma' at clock pin 'm_axi_mm2s_aclk' is different from the actual clock period '7.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/video/proc_sys_reset_pixelclk' at clock pin 'slowest_sync_clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/video/hdmi_in/frontend/v_vid_in_axi4s_0' at clock pin 'vid_io_in_clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/video/hdmi_in/frontend/vtc_in' at clock pin 'clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 148).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 149).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 261).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 262).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_ps7_0_0/system_ps7_0_0/system_ps7_0_0_in_context.xdc, line 263).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  e:/Work_Space/vivado_workspace/video_stream/video_stream.srcs/sources_1/bd/system/ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0/system_dvi2rgb_0_1_in_context.xdc, line 17).
+Applied set_property DONT_TOUCH = true for system_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/concat_interrupts. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/proc_sys_reset_fclk1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/rst_ps7_0_fclk0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/system_interrupts. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_mem_intercon. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_vdma. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/proc_sys_reset_pixelclk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_out/axis_register_slice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_out/color_convert. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_out/pixel_unpack. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_out/frontend/axi_dynclk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_out/frontend/color_swap_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_out/frontend/hdmi_out_hpd_video. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_out/frontend/rgb2dvi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_out/frontend/v_axi4s_vid_out_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_out/frontend/vtc_out. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_in/axis_register_slice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_in/color_convert. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_in/pixel_pack. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_in/frontend/axi_gpio_hdmiin. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_in/frontend/color_swap_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_in/frontend/v_vid_in_axi4s_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_in/frontend/vtc_in. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_mem_intercon/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_in/frontend/dvi2rgb_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/hdmi_in/pixel_stream_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m01_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m02_couplers/m02_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m02_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m03_couplers/m03_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m04_couplers/m04_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m05_couplers/m05_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m06_couplers/m06_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m06_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m07_couplers/m07_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m07_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m08_couplers/m08_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_interconnect_0/m09_couplers/m09_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_mem_intercon/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_mem_intercon/s01_couplers/s01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_mem_intercon/s01_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_mem_intercon/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/video/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/ps7_0/FCLK_CLK0' to pin 'system_i/ps7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/ps7_0/FCLK_CLK1' to pin 'system_i/ps7_0/bbstub_FCLK_CLK1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/ps7_0/FCLK_CLK2' to pin 'system_i/ps7_0/bbstub_FCLK_CLK2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/video/hdmi_out/frontend/rgb2dvi_0/SerialClk' to pin 'system_i/video/hdmi_out/frontend/axi_dynclk/bbstub_PXL_CLK_5X_O/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'system_i/video/hdmi_out/frontend/rgb2dvi_0/PixelClk' to 'system_i/video/hdmi_out/frontend/axi_dynclk/bbstub_PXL_CLK_O/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/video/hdmi_in/frontend/dvi2rgb_1/PixelClk' to pin 'system_i/video/hdmi_in/frontend/dvi2rgb_1/bbstub_PixelClk/O'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |system_xbar_2                    |         1|
+|2     |system_m00_regslice_0            |         1|
+|3     |system_m01_regslice_0            |         1|
+|4     |system_auto_pc_1                 |         1|
+|5     |system_s00_regslice_0            |         1|
+|6     |system_proc_sys_reset_fclk1_0    |         1|
+|7     |system_ps7_0_0                   |         1|
+|8     |system_rst_ps7_0_fclk0_0         |         1|
+|9     |system_system_interrupts_0       |         1|
+|10    |system_xbar_0                    |         1|
+|11    |system_m00_regslice_1            |         1|
+|12    |system_auto_cc_0                 |         1|
+|13    |system_m01_regslice_1            |         1|
+|14    |system_auto_cc_1                 |         1|
+|15    |system_m02_regslice_0            |         1|
+|16    |system_m03_regslice_0            |         1|
+|17    |system_m04_regslice_0            |         1|
+|18    |system_m05_regslice_0            |         1|
+|19    |system_auto_cc_2                 |         1|
+|20    |system_m06_regslice_0            |         1|
+|21    |system_auto_cc_3                 |         1|
+|22    |system_m07_regslice_0            |         1|
+|23    |system_m08_regslice_0            |         1|
+|24    |system_m09_regslice_0            |         1|
+|25    |system_s00_regslice_1            |         1|
+|26    |system_xbar_1                    |         1|
+|27    |system_auto_pc_0                 |         1|
+|28    |system_m00_regslice_2            |         1|
+|29    |system_s00_regslice_2            |         1|
+|30    |system_auto_us_0                 |         1|
+|31    |system_s01_regslice_0            |         1|
+|32    |system_axi_vdma_0                |         1|
+|33    |system_proc_sys_reset_pixelclk_0 |         1|
+|34    |system_axis_register_slice_0_0   |         1|
+|35    |system_color_convert_0           |         1|
+|36    |system_pixel_pack_0              |         1|
+|37    |system_pixel_stream_0_0          |         1|
+|38    |system_axi_gpio_hdmiin_0         |         1|
+|39    |system_color_swap_0_0            |         1|
+|40    |system_dvi2rgb_1_0               |         1|
+|41    |system_v_vid_in_axi4s_0_0        |         1|
+|42    |system_vtc_in_0                  |         1|
+|43    |system_axis_register_slice_0_1   |         1|
+|44    |system_color_convert_1           |         1|
+|45    |system_pixel_unpack_0            |         1|
+|46    |system_axi_dynclk_0              |         1|
+|47    |system_color_swap_0_1            |         1|
+|48    |system_hdmi_out_hpd_video_0      |         1|
+|49    |system_rgb2dvi_0_0               |         1|
+|50    |system_v_axi4s_vid_out_0_0       |         1|
+|51    |system_vtc_out_0                 |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |system_auto_cc_0                 |     1|
+|2     |system_auto_cc_1                 |     1|
+|3     |system_auto_cc_2                 |     1|
+|4     |system_auto_cc_3                 |     1|
+|5     |system_auto_pc_0                 |     1|
+|6     |system_auto_pc_1                 |     1|
+|7     |system_auto_us_0                 |     1|
+|8     |system_axi_dynclk_0              |     1|
+|9     |system_axi_gpio_hdmiin_0         |     1|
+|10    |system_axi_vdma_0                |     1|
+|11    |system_axis_register_slice_0_0   |     1|
+|12    |system_axis_register_slice_0_1   |     1|
+|13    |system_color_convert_0           |     1|
+|14    |system_color_convert_1           |     1|
+|15    |system_color_swap_0_0            |     1|
+|16    |system_color_swap_0_1            |     1|
+|17    |system_dvi2rgb_1_0               |     1|
+|18    |system_hdmi_out_hpd_video_0      |     1|
+|19    |system_m00_regslice_0            |     1|
+|20    |system_m00_regslice_1            |     1|
+|21    |system_m00_regslice_2            |     1|
+|22    |system_m01_regslice_0            |     1|
+|23    |system_m01_regslice_1            |     1|
+|24    |system_m02_regslice_0            |     1|
+|25    |system_m03_regslice_0            |     1|
+|26    |system_m04_regslice_0            |     1|
+|27    |system_m05_regslice_0            |     1|
+|28    |system_m06_regslice_0            |     1|
+|29    |system_m07_regslice_0            |     1|
+|30    |system_m08_regslice_0            |     1|
+|31    |system_m09_regslice_0            |     1|
+|32    |system_pixel_pack_0              |     1|
+|33    |system_pixel_stream_0_0          |     1|
+|34    |system_pixel_unpack_0            |     1|
+|35    |system_proc_sys_reset_fclk1_0    |     1|
+|36    |system_proc_sys_reset_pixelclk_0 |     1|
+|37    |system_ps7_0_0                   |     1|
+|38    |system_rgb2dvi_0_0               |     1|
+|39    |system_rst_ps7_0_fclk0_0         |     1|
+|40    |system_s00_regslice_0            |     1|
+|41    |system_s00_regslice_1            |     1|
+|42    |system_s00_regslice_2            |     1|
+|43    |system_s01_regslice_0            |     1|
+|44    |system_system_interrupts_0       |     1|
+|45    |system_v_axi4s_vid_out_0_0       |     1|
+|46    |system_v_vid_in_axi4s_0_0        |     1|
+|47    |system_vtc_in_0                  |     1|
+|48    |system_vtc_out_0                 |     1|
+|49    |system_xbar_0                    |     1|
+|50    |system_xbar_1                    |     1|
+|51    |system_xbar_2                    |     1|
+|52    |IOBUF                            |     4|
+|53    |OBUF                             |     2|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------+----------------------------+------+
+|      |Instance                 |Module                      |Cells |
++------+-------------------------+----------------------------+------+
+|1     |top                      |                            |  6402|
+|2     |  system_i               |system                      |  6396|
+|3     |    concat_interrupts    |system_concat_interrupts_0  |     0|
+|4     |    ps7_0_axi_periph     |system_ps7_0_axi_periph_0   |   950|
+|5     |      m00_couplers       |m00_couplers_imp_1H7AUOX    |   106|
+|6     |      m01_couplers       |m01_couplers_imp_4Y7TYO     |   152|
+|7     |      s00_couplers       |s00_couplers_imp_11SE3QO    |   429|
+|8     |    video                |video_imp_1EQPUBJ           |  5072|
+|9     |      axi_interconnect_0 |system_axi_interconnect_0_1 |  2731|
+|10    |        m00_couplers     |m00_couplers_imp_17F0U9H    |   106|
+|11    |        m01_couplers     |m01_couplers_imp_DW50H0     |   196|
+|12    |        m02_couplers     |m02_couplers_imp_7Q885Y     |   204|
+|13    |        m03_couplers     |m03_couplers_imp_1EEWPTZ    |    98|
+|14    |        m04_couplers     |m04_couplers_imp_K25AYA     |   106|
+|15    |        m05_couplers     |m05_couplers_imp_1RUS6CJ    |   106|
+|16    |        m06_couplers     |m06_couplers_imp_1LOVFTD    |   204|
+|17    |        m07_couplers     |m07_couplers_imp_R217WG     |   196|
+|18    |        m08_couplers     |m08_couplers_imp_1UFEID6    |   106|
+|19    |        m09_couplers     |m09_couplers_imp_I1BV1N     |   106|
+|20    |        s00_couplers     |s00_couplers_imp_1BPMI78    |   152|
+|21    |      axi_mem_intercon   |system_axi_mem_intercon_1   |  1226|
+|22    |        m00_couplers     |m00_couplers_imp_1D9ZDWS    |   530|
+|23    |        s00_couplers     |s00_couplers_imp_117EIM5    |   142|
+|24    |        s01_couplers     |s01_couplers_imp_B8JDWS     |   200|
+|25    |      xlconcat_0         |system_xlconcat_0_0         |     0|
+|26    |      hdmi_in            |hdmi_in_imp_NQ29ND          |   418|
+|27    |        frontend         |frontend_imp_1IDM840        |   213|
+|28    |      hdmi_out           |hdmi_out_imp_1JATQKJ        |   415|
+|29    |        frontend         |frontend_imp_58W1JN         |   249|
++------+-------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 867.121 ; gain = 536.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 867.121 ; gain = 174.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 867.121 ; gain = 536.355
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+192 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 882.773 ; gain = 564.836
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.773 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Work_Space/vivado_workspace/video_stream/video_stream.runs/synth_1/system_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 13:11:13 2019...

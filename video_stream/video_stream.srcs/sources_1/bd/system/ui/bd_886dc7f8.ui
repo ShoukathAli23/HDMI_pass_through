@@ -1,0 +1,48 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port S00_AXILite -pg 1 -y 430 -defaultsOSRD
+preplace port PixelClk -pg 1 -y 620 -defaultsOSRD
+preplace port clk_100M -pg 1 -y 450 -defaultsOSRD
+preplace port aPixelClkLckd -pg 1 -y 640 -defaultsOSRD
+preplace port TMDS_in -pg 1 -y 600 -defaultsOSRD
+preplace port clk_142M -pg 1 -y 320 -defaultsOSRD
+preplace port hdmi_in_hpd_irq -pg 1 -y 490 -defaultsOSRD
+preplace port clk_200M -pg 1 -y 620 -defaultsOSRD
+preplace port vtc_in_irq -pg 1 -y 130 -defaultsOSRD
+preplace port S02_AXILite -pg 1 -y 40 -defaultsOSRD
+preplace port DDC -pg 1 -y 600 -defaultsOSRD
+preplace port video_out -pg 1 -y 270 -defaultsOSRD
+preplace portBus periph_resetn_clk100M -pg 1 -y 640 -defaultsOSRD
+preplace portBus resetn -pg 1 -y 180 -defaultsOSRD
+preplace portBus vid_io_in_reset -pg 1 -y 300 -defaultsOSRD
+preplace portBus hdmi_in_hpd -pg 1 -y 430 -defaultsOSRD
+preplace inst color_swap_0 -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace inst vtc_in -pg 1 -lvl 3 -y 120 -defaultsOSRD
+preplace inst axi_gpio_hdmiin -pg 1 -lvl 3 -y 450 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 2 -y 310 -defaultsOSRD
+preplace inst dvi2rgb_0 -pg 1 -lvl 3 -y 630 -defaultsOSRD
+preplace netloc Conn1 1 3 1 NJ
+preplace netloc Conn2 1 0 3 NJ 600 NJ 600 NJ
+preplace netloc axi_gpio_video_ip2intc_irpt 1 3 1 NJ
+preplace netloc Conn3 1 0 3 NJ 40 NJ 40 NJ
+preplace netloc dvi2rgb_0_PixelClk1 1 1 3 290 160 620 280 960
+preplace netloc ps7_0_axi_periph_M07_AXI 1 0 3 20J 440 NJ 440 620J
+preplace netloc hdmi_in_video_out 1 2 2 NJ 270 NJ
+preplace netloc RefClk_1 1 0 3 NJ 620 NJ 620 NJ
+preplace netloc v_tc_1_irq 1 3 1 NJ
+preplace netloc resetn_1 1 0 3 NJ 180 NJ 180 NJ
+preplace netloc dvi2rgb_0_aPixelClkLckd 1 3 1 970
+preplace netloc color_swap_0_pixel_output 1 1 1 NJ
+preplace netloc vid_io_in_reset_1 1 0 2 NJ 300 NJ
+preplace netloc Net1 1 0 3 NJ 640 NJ 640 630
+preplace netloc Net 1 0 3 NJ 450 NJ 450 610
+preplace netloc v_vid_in_axi4s_0_vtiming_out 1 2 1 590
+preplace netloc axi_gpio_video_gpio_io_o 1 3 1 NJ
+preplace netloc aclk_1 1 0 2 NJ 320 NJ
+preplace netloc dvi2rgb_0_RGB 1 0 4 20 170 NJ 170 600J 260 950
+levelinfo -pg 1 0 160 460 810 1000 -top -20 -bot 720
+"
+}
+0
